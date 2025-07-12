@@ -1,4 +1,3 @@
-````markdown
 # MoWave Backend
 
 This is the backend API for the MoWave hotspot and voucher management system. It is built using Node.js and Express, with PostgreSQL as the database.
