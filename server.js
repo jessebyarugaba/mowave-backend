@@ -10,7 +10,11 @@ const adminRoutes = require('./routes/admin');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+
+app.use(cors({
+    origin: '*', // 👈 Allow all origins (or replace with your frontend URL to restrict)
+}));
 
 app.use('/auth', authRoutes);
 app.use('/voucher', voucherRoutes);
