@@ -82,8 +82,8 @@ router.post('/purchase', async (req, res) => {
             reason: 'Test Voucher purchase',
             currency: 'UGX',
             name: '',
-            success_callback: 'https://webhook.site/89a22757-a740-4214-aceb-6bf1e0787b5b',
-            failure_callback: 'https://webhook.site/89a22757-a740-4214-aceb-6bf1e0787b5b'
+            success_callback: 'https://exclusive-madlin-phino-6d7723ae.koyeb.app/voucher/payment-webhook',
+            failure_callback: 'https://exclusive-madlin-phino-6d7723ae.koyeb.app/voucher/payment-webhook'
         };
 
         const response = await axios.post('https://wallet.ssentezo.com/api/deposit', requestBody, { headers });
